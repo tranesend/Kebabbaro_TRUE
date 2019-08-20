@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportBugOthers">
+
+        <TextView
+            android:id="@+id/tv_rep_b_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C'è qualcosa che non va?"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textSize="15pt"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_rep_b_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dicci di più!"
+            app:layout_constraintTop_toBottomOf="@id/tv_rep_b_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/et_report_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:hint="Dacci più informazioni!"
+            app:layout_constraintTop_toBottomOf="@id/tv_rep_b_title2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+        <Button
+            android:id="@+id/btn_snd_bugs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_report_b"
+            android:layout_marginTop="10dp"
+            android:text="Invia"
+            android:onClick="sendBugs"
+            android:background="@color/colorAccent"
+            />
+
+        <Button
+            android:id="@+id/btn_cls_bugs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_report_b"
+            android:layout_marginTop="10dp"
+            android:text="Chiudi"
+            android:onClick="closeBugs"
+            android:background="@color/colorAccent"
+            />
+
+        <TextView
+            android:id="@+id/tv_info_bothers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_snd_bugs"
+            android:text="@string/rep_more_w_info"
+            android:textSize="10pt"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ban_id3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:layout_constraintTop_toBottomOf="@id/tv_info_bothers"
+            android:layout_marginTop="20dp"
+            ads:adSize="LARGE_BANNER"
+            ads:adUnitId="ca-app-pub-6598892495270547/2098267347">
+
+        </com.google.android.gms.ads.AdView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

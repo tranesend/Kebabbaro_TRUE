@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Kebabbaro</string>
+    <string name="title_activity_maps">\'Ndo se magna?</string>
+    <string name="aboutus">
+        Ciao, questa app nasce da un\'idea di due ragazzi di Roma, appassionati di birra
+        e kebab, che non perdono l\'occasione per scoprire nuovi posti economici in cui
+        mangiare. A quanti sarà capitato il sabato sera di aver fame e cercare
+        un kebbabbaro aperto? E a quanti sarà capitato di non conoscerne in zona, oppure di non trovarli
+        sulle mappe di Google!?
+        Se vi sentite coinvolti in questi problemi \"esistenziali\" allora avete trovato l\'App che fa per voi.
+        Se conoscete alcuni kebabbari non presenti potete segnalarceli al nostro indirizzo mail nella sezione
+        Contatti oppure inviando la mail attraverso il form raggiunto cliccando sull\'icona in alto.
+
+
+    </string>
+
+    <string name="my_email"> tranesend@gmail.com </string>
+
+    <string name="rep_tit">Dicci di più!</string>
+
+    <string name="rep_more_w_info">
+        Puoi scegliere se inviarci una mail aiutandoti col form sovrastante
+        oppure scriverci direttamente a tranesend@gmail.com
+
+
+    </string>
+
+</resources>

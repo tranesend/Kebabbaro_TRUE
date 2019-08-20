@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popUpW"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_popup">
+
+    <Button
+        android:id="@+id/btn_close_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Chiudi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/tv_ind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indirizzo"
+        android:textSize="8pt"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintTop_toBottomOf="@id/btn_close_pw"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <EditText
+        android:id="@+id/et_ind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Dove si trova?"
+        app:layout_constraintLeft_toRightOf="@id/tv_ind"
+        app:layout_constraintTop_toBottomOf="@id/btn_close_pw"
+        android:textSize="8pt"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_info_opt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dacci altre informazioni utili!"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_ind"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prezzo"
+        app:layout_constraintTop_toBottomOf="@id/tv_info_opt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="8pt"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <EditText
+        android:id="@+id/et_price"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        app:layout_constraintLeft_toRightOf="@id/tv_price"
+        app:layout_constraintTop_toBottomOf="@id/tv_info_opt"
+        android:textSize="8pt"
+        android:layout_marginLeft="10dp"
+        app:layout_goneMarginLeft="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_datetime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chiude alle"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="8pt"
+        app:layout_constraintLeft_toRightOf="@id/et_price"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+
+        app:layout_goneMarginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_info_opt"
+        />
+
+    <EditText
+        android:id="@+id/et_datetime"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        app:layout_constraintLeft_toRightOf="@id/tv_datetime"
+        app:layout_constraintTop_toBottomOf="@id/tv_info_opt"
+        android:textSize="8pt"
+        android:layout_marginLeft="10dp"
+        app:layout_goneMarginLeft="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_info_opt_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scrivici il nome del posto (se lo conosci)"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tv_price"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/et_nameloc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Come si chiama il locale?"
+        app:layout_constraintTop_toBottomOf="@id/tv_info_opt_B"
+        android:textSize="8pt"
+        android:layout_marginLeft="10dp"
+        app:layout_goneMarginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Invia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_nameloc"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

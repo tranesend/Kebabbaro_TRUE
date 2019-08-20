@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportWrongsInfo">
+
+    <TextView
+        android:id="@+id/tv_rep_w_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C'\è un Kebabbaro fuori posto!? Mandaci una mail compilando il form!"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_rep_w_ind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indirizzo"
+        android:textSize="8pt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_rep_w_title"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        />
+
+<Spinner
+    android:id="@+id/spin_ind_rep"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/tv_rep_w_title"
+    app:layout_constraintLeft_toRightOf="@id/tv_rep_w_ind"
+    android:layout_marginTop="10dp"
+    ></Spinner>
+
+    <TextView
+        android:id="@+id/tv_rep_w_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dicci di più!"
+        app:layout_constraintTop_toBottomOf="@id/tv_rep_w_ind"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/et_report_w"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:hint="Dacci più informazioni!"
+        app:layout_constraintTop_toBottomOf="@id/tv_rep_w_title2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+    <Button
+        android:id="@+id/btn_snd_rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_report_w"
+        android:layout_marginTop="10dp"
+        android:text="Invia"
+        android:onClick="sendReport"
+        android:background="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/btn_cls_rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_report_w"
+        android:layout_marginTop="10dp"
+        android:text="Chiudi"
+        android:onClick="closeReport"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/tv_more_w_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn_snd_rep"
+        android:text="@string/rep_more_w_info"
+        android:textSize="10pt"
+        android:layout_marginTop="10dp"
+        />
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ban_id4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:layout_constraintTop_toBottomOf="@id/tv_more_w_info"
+        ads:adSize="LARGE_BANNER"
+        ads:adUnitId="ca-app-pub-6598892495270547/2098267347">
+
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

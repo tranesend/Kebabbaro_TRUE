@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InfoActivity"
+    android:background="@color/colorAccent">
+
+
+  <ImageView
+      android:id="@+id/img_about"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:src="@drawable/turkey"
+      android:layout_marginBottom="10dp"
+      android:layout_marginTop="10dp"/>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/aboutus"
+      android:textStyle="italic"
+      android:textColor="@color/colorPrimaryDark"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginBottom="10dp"
+      android:textSize="8pt"/>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Versione 1.0 (Beta)"
+      android:textColor="#f54242"
+      android:textSize="5pt"
+      android:textStyle="bold"
+      />
+
+  <com.google.android.gms.ads.AdView
+      xmlns:ads="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/ban_id2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="10dp"
+      ads:adSize="LARGE_BANNER"
+      ads:adUnitId="ca-app-pub-6598892495270547/2098267347"
+      >
+
+  </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>
